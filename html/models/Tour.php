@@ -7,7 +7,7 @@ class Tour
 {
 
     // Количество отображаемых туров по умолчанию
-    const SHOW_BY_DEFAULT = 1;
+    const SHOW_BY_DEFAULT = 10;
 
 	public static function getValueOfTours($country){
 		        // Соединение с БД

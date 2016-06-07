@@ -259,11 +259,14 @@ p{
 }
 
 .pagination a{
-	color: blue;
+	color: purple;
 }
 
 .pagination .current-page{
-	color: red;
+	color: white;
+	background-color: purple;
+    padding: 10px 10px;
+    border-radius: 4px 4px 4px 4px;
 }
 
 .pagination li{
