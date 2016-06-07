@@ -1,0 +1,4 @@
+<?php
+	$s = "<?php echo $s; ?>";
+	echo $s;
+?>

@@ -1,0 +1,13 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<?php include ("header.htm"); ?>
+<div id = "content">
+<p>testtest</p>
+<img src="img/travel-throught-the-world" alt="travel"/>
+</div>
+<?php include ("footer.htm"); ?>
+</body>
+</html>
