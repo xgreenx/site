@@ -6,8 +6,8 @@ return array(
     // Каталог:
     'catalog' => 'catalog/index', // actionIndex в CatalogController
     // Категория товаров:
-    'country/([A-Z]+)/page-([0-9]+)' => 'catalog/country/$1/$2', // actionCountry в CatalogController   
-    'country/([A-Z]*)' => 'catalog/country/$1', // actionCountry в CatalogController
+    'country/([A-Z]+)/([0-9]+)' => 'catalog/country/$1/$2', // actionCountry в CatalogController   
+    'country/([A-Z]([a-z]+))' => 'catalog/country/$1', // actionCountry в CatalogController
     'sale'=>'catalog/sale',//actionSale в CatalogController
     // Корзина:
     'favourite/checkout' => 'favourite/checkout', // actionAdd в FavouriteController    

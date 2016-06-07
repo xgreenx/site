@@ -84,7 +84,7 @@ class Pagination
         for ($page = $limits[0]; $page <= $limits[1]; $page++) {
             # Если текущая это текущая страница, ссылки нет и добавляется класс active
             if ($page == $this->current_page) {
-                $links .= '<li class="active"><a href="#">' . $page . '</a></li>';
+                $links .= '<li class="active"><a class="current-page" href="#">' . $page . '</a></li>';
             } else {
                 # Иначе генерируем ссылку
                 $links .= $this->generateHtml($page);
@@ -124,7 +124,7 @@ class Pagination
             $text = $page;
 
         $currentURI = rtrim($_SERVER['REQUEST_URI'], '/') . '/';
-        $currentURI = preg_replace('~/page-[0-9]+~', '', $currentURI);
+        $currentURI = preg_replace('~/[0-9]+~', '', $currentURI);
         # Формируем HTML код ссылки и возвращаем
         return
                 '<li><a href="' . $currentURI . $this->index . $page . '">' . $text . '</a></li>';

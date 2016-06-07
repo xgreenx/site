@@ -253,3 +253,20 @@ p{
 	padding-top: 2%;
 	padding-bottom: 7%;
 }
+
+.pagination{
+	text-align:center;
+}
+
+.pagination a{
+	color: blue;
+}
+
+.pagination .current-page{
+	color: red;
+}
+
+.pagination li{
+	display:inline;
+	padding: 5px;
+}

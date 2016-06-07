@@ -7,7 +7,7 @@ class Tour
 {
 
     // Количество отображаемых туров по умолчанию
-    const SHOW_BY_DEFAULT = 10;
+    const SHOW_BY_DEFAULT = 1;
 
 	public static function getValueOfTours($country){
 		        // Соединение с БД
@@ -82,25 +82,25 @@ class Tour
      * @param type $page [optional] <p>Номер страницы</p>
      * @return type <p>Массив с турами</p>
      */
-    public static function getToursListByCountry($_country)
+    public static function getToursListByCountry($_country, $page)
     {
-        //$limit = Tour::SHOW_BY_DEFAULT;
+        $limit = Tour::SHOW_BY_DEFAULT;
         // Смещение (для запроса)
-       // $offset = ($page - 1) * self::SHOW_BY_DEFAULT;
+       	$offset = (int)($page - 1) * self::SHOW_BY_DEFAULT;
 
         // Соединение с БД
         $db = Db::getConnection();
 
         // Текст запроса к БД
         $sql = 'SELECT * FROM tours '
-        		. 'WHERE country=:country';
-                //. 'ORDER BY date Desc LIMIT :limit OFFSET :offset';
+        		. 'WHERE country = :country '
+                . ' ORDER BY date Desc LIMIT :limit OFFSET :offset';
 
         // Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':country', $_country, PDO::PARAM_STR);
-        //$result->bindParam(':limit', $limit, PDO::PARAM_INT);
-        //$result->bindParam(':offset', $offset, PDO::PARAM_INT);
+        $result->bindParam(':limit', $limit, PDO::PARAM_INT);
+        $result->bindParam(':offset', $offset, PDO::PARAM_INT);
 
         // Выполнение комaнды
         $result->execute();

@@ -10,6 +10,7 @@ define('ROOT', dirname(__FILE__));
 
 include_once 'models/User.php';
 include_once 'models/Tour.php';
+include_once 'components/Pagination.php';
 
 //echo __FILE__;
 //echo "<br>";
