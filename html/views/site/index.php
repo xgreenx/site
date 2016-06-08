@@ -3,7 +3,7 @@
 	<link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
-<?php include ("header.htm"); ?>
+<?php include ("header.php"); ?>
 <div class = "content">
 	<img id = "mysvg" src="img/World_of_Words.svg"  alt="map" usemap="#map" border='0' width="100%" />
 </div> 

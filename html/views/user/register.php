@@ -1,10 +1,5 @@
-<?php include ROOT . '/views/layouts/header.php'; ?>
+<?php include ("header.php"); ?>
 
-<section>
-    <div class="container">
-        <div class="row">
-
-            <div class="col-sm-4 col-sm-offset-4 padding-right">
                 
                 <?php if ($result): ?>
                     <p>Вы зарегистрированы!</p>
@@ -17,7 +12,6 @@
                         </ul>
                     <?php endif; ?>
 
-                    <div class="signup-form"><!--sign up form-->
                         <h2>Регистрация на сайте</h2>
                         <form action="#" method="post">
                             <input type="text" name="name" placeholder="Имя" value="<?php echo $name; ?>"/>
@@ -30,9 +24,5 @@
                 <?php endif; ?>
                 <br/>
                 <br/>
-            </div>
-        </div>
-    </div>
-</section>
 
-<?php include ROOT . '/views/layouts/footer.php'; ?>
+<?php include ("footer.htm"); ?>

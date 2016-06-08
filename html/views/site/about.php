@@ -3,7 +3,7 @@
 	<link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
-<?php include ("header.htm"); ?>
+<?php include ("header.php"); ?>
 <div class = "content">
 <div class="AboutUsblock">
 <img id="aboutUsImg1" src="img/travel-throught-the-world1.jpg" alt="travel"/>

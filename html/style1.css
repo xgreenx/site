@@ -13,14 +13,14 @@
 	margin-top: -2.5px;
 	vertical-align: middle;
 }
-#menu{
+.menu{
 	font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
 	font-size:  14px;
 	margin-right: 8%;
 	float: right;
 	clear: right;
 }
-#logo{
+.logo{
 	height: 100px;
 	border: none;
 	margin: 1px;
@@ -282,4 +282,8 @@ p{
   padding: 10px 14px;
   background: #009ea1;
   color: #fff;
+}
+.tour_content p {
+	float:right;
+	word-wrap: break-word;
 }

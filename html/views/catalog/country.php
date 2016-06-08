@@ -3,7 +3,7 @@
 </head>
 <body>
 
-<?php include ("header.htm"); ?>
+<?php include ("header.php"); ?>
                     <?php foreach ($tours as $tour): ?>
                     	<div class="sub_tour_desc">
                                         <h2><?php echo $tour['value']; ?></h2>

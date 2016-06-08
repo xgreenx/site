@@ -1,7 +1,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style1.css">
 </head>
-<?php include ("header.htm"); ?>
+<?php include ("header.php"); ?>
                     <h2>Lastest Tours : </h2>
                     <?php foreach ($tours as $tour): ?>
                     	<div class='tour_short_desc'>                    	

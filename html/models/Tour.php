@@ -394,6 +394,7 @@ class Tour
         // Путь к изображениям туров
         $i=0;
         foreach($images_name as $name){
+        	if(empty($name)) continue;
         	$pathToTourImages[$i] = $path.$row['country'].'/'.$name.'.jpg';
 			if (file_exists($_SERVER['DOCUMENT_ROOT'].$pathToTourImages[$i])){
 				++$i;

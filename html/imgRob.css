@@ -1,0 +1,31 @@
+	body .slider {
+		overflow:hidden; /* Скрываем всё что за блоком слайдера */
+		position:relative;
+		width:400px;
+		height:300px;
+	}
+	
+		body .slider .slides {
+			position:relative;
+			transition:1s; /* Задаем время изменения блока, отвечает за плавную прокрутку */
+		}
+		
+			body .slider .slides .slide {
+				float:left;
+			}
+			
+			body .slider .slides .slide img{
+				width:400px;
+				height:300px;
+			}
+			
+		body .slider .next {
+			position:absolute;
+			height:50px;
+			width:50px;
+			background:#009900;
+			right:0;
+			top:225px;
+			z-index:1;
+			cursor:pointer;
+		}

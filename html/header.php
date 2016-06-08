@@ -1,0 +1,43 @@
+<div id = "header" >
+	<script type="text/javascript" src="/myjs.js">
+	</script>	
+	<link rel="stylesheet" type="text/css" href="/style1.css">
+	<script type="text/javascript" src="/jquery-1-12-4.js">
+	</script>	
+	<div id="userMenu" > 
+	 <?php if (User::isGuest()): ?>         
+	<a href="/user/register"> Registrate  </a> 
+	 | 
+	 <a href="/user/login"> Sign Up  </a>    
+	<!--<span onclick = "RegShow('block')">Sign In</span>-->
+	<?php else: ?>
+    	<a href="/cabinet/"> Аккаунт</a>
+    	|<a href="/user/logout/"> Выход</a>
+    <?php endif; ?>
+	</div>
+	<a href="/" ><img class = "logo" src="/img/logo1.png"/></a>
+	
+	<div class = "menu" > 
+		<table cellspacing = '30px' >
+			<tr>
+				<th><a href="/about">ABOUT US</a></th>
+				<th><a href="/catalog">WHAT'S NEW?</a></th>
+				<th><a href="/sale">SALE</a></th>
+				<th><a>REVIEWS</a></th>
+			</tr>
+		</table>
+	</div>
+	<hr id="topline">
+</div>
+<!--<div class="wrap" id="sign"></div>
+<form id="signUpWin">	
+	<a class = "close" id="signUpClose" onclick="RegShow('none')"></a>
+    <fieldset id="inputs">
+    	<input id="username" type="text" onblur="if(this.value=='')this.value='Логин';" onfocus="if(this.value=='Логин')this.value='';" value="Логин" />
+    	<input id="password" type="text" onblur="if(this.value=='')this.value='Пароль';" onfocus="if(this.value=='Пароль')this.value='';" value="Пароль" />
+    </fieldset>
+    <fieldset id="actions">
+        <input type="submit" id="submit" value="ВОЙТИ"/>
+        <p class="option"><a href="user/register">Регистрация</a></p>
+    </fieldset>
+</form>-->

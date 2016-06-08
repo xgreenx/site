@@ -91,7 +91,7 @@ class UserController
                 User::auth($userId);
 
                 // Перенаправляем пользователя в закрытую часть - кабинет 
-                header("Location: /cabinet");
+                header("Location: /");
             }
         }
 

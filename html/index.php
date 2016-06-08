@@ -7,6 +7,7 @@ error_reporting(E_ALL);
 //2 Подключения файлов в системы
 define('ROOT', dirname(__FILE__));
 
+session_start();
 
 include_once 'models/User.php';
 include_once 'models/Tour.php';
