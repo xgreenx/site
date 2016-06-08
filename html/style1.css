@@ -273,3 +273,13 @@ p{
 	display:inline;
 	padding: 5px;
 }
+
+#scrollUp {
+  border-radius: 4px 4px 4px 4px;
+  font-size:20;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 14px;
+  background: #009ea1;
+  color: #fff;
+}

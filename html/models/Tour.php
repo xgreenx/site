@@ -240,6 +240,7 @@ class Tour
             $Tours[$i]['name'] = $row['name'];
             $Tours[$i]['country'] = $row['country'];
             $Tours[$i]['value'] = $row['value'];
+			$Tours[$i]['images_array'] = $row['images_array'];
             $i++;
         }
         return $Tours;

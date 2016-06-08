@@ -11,11 +11,22 @@
 			</tr>
 		</table>
 </div>
-<script src="/js/jquery.js"></script>
-<script src="/js/jquery.cycle2.min.js"></script>
-<script src="/js/jquery.cycle2.carousel.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
 <script src="/js/jquery.scrollUp.min.js"></script>
-<script src="/js/price-range.js"></script>
-<script src="/js/jquery.prettyPhoto.js"></script>
-<script src="/js/main.js"></script>
+<link rel="stylesheet" type="/text/css" href="/style1.css">
+<link rel="stylesheet" href="/imgRob.css" type="text/css" />
+<script type="text/javascript" src="/js/slider.js"></script>
+<script type="text/javascript">
+	$(function () {
+	  $.scrollUp({
+	    scrollName: 'scrollUp', // Element ID
+	    topDistance: '300', // Distance from top before showing element (px)
+	    topSpeed: 300, // Speed back to top (ms)
+	    animation: 'fade', // Fade, slide, none
+	    animationInSpeed: 200, // Animation in speed (ms)
+	    animationOutSpeed: 200, // Animation out speed (ms)
+	    scrollText: '^', // Text for element
+	    activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+	  });
+	});	
+	
+</script>
